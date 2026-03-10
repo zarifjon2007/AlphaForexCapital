@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-poppins: "Poppins", sans-serif;
+    --font-unbounded: "Unbounded", sans-serif;
+
+    /* Oq va ko'k mavzu */
+    --background: 210 100% 3%; /* ~#020617 Navy Blue */
+    --foreground: 210 20% 96%; /* light silver-ish text */
+
+    --card: 210 30% 8%; /* dark card */
+    --card-foreground: 210 20% 96%;
+
+    --popover: 210 30% 8%;
+    --popover-foreground: 210 20% 96%;
+
+    /* Oq va ko'k mavzu, primary = #007ac3 */
+    --primary: 201 100% 38%; /* approx #007ac3 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 28% 20%;
+    --secondary-foreground: 210 20% 96%;
+
+    --muted: 215 30% 18%;
+    --muted-foreground: 215 20% 78%;
+
+    --accent: 210 60% 20%;
+    --accent-foreground: 210 20% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 28% 28%;
+    --input: 215 28% 28%;
+    --ring: 213 97% 82%;
+    --radius: 0.75rem;
+
+    --chart-1: 221 83% 53%;
+    --chart-2: 199 89% 48%;
+    --chart-3: 173 80% 40%;
+    --chart-4: 43 96% 56%;
+    --chart-5: 27 96% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-poppins), sans-serif;
+  }
+
+  /* Dark navy global overrides so site is not white */
+  .bg-white {
+    background-color: #020617 !important;
+  }
+  .bg-slate-50 {
+    background-color: #020617 !important;
+  }
+  .text-slate-900,
+  .text-slate-800,
+  .text-slate-700 {
+    color: #e5e7eb !important; /* light gray / near white */
+  }
+  .text-slate-600,
+  .text-slate-500 {
+    color: #9ca3af !important; /* silver-ish */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-unbounded), sans-serif;
+    font-weight: 700;
+  }
+}
+
+/* Animatsiyalar: fade-in */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.animate-fade-in-delay-1 { animation-delay: 0.15s; opacity: 0; }
+.animate-fade-in-delay-2 { animation-delay: 0.3s; opacity: 0; }
+.animate-fade-in-delay-3 { animation-delay: 0.45s; opacity: 0; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero: ochiq ko'k gradient fon */
+.hero-blue-bg {
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 40%, #f8fafc 100%);
+  background-size: 100% 100%;
+}
+.hero-waves {
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(59, 130, 246, 0.12) 0%, transparent 45%);
+}
+
+/* Ko'k pulse / glow */
+.hero-glow-blue {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 50%,
+    rgba(59, 130, 246, 0.12) 0%,
+    rgba(56, 189, 248, 0.06) 50%,
+    transparent 70%
+  );
+  animation: heroGlowBlue 5s ease-in-out infinite;
+}
+@keyframes heroGlowBlue {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+
+/* Promo: ko'k ranglar */
+.promo-bogo-btn {
+  animation: promoBogoScale 1.4s ease-in-out infinite;
+}
+@keyframes promoBogoScale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+.promo-limited-btn {
+  animation: promoBluePulse 1.8s ease-in-out infinite;
+}
+@keyframes promoBluePulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px 4px rgba(59, 130, 246, 0.4);
+  }
+}
+.promo-sticker {
+  display: inline-block;
+  animation: promoStickerPulse 1.2s ease-in-out infinite;
+}
+@keyframes promoStickerPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Promo banner — 🎁 snow effect */
+.gift-snow-layer {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 20;
+}
+.gift-snow-item {
+  position: absolute;
+  top: 0;
+  font-size: 1.6rem;
+  animation-name: giftSnowFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+@keyframes giftSnowFall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* Tugma hover */
+.btn-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.btn-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 122, 195, 0.35);
+}
+.btn-lift:active {
+  transform: translateY(0);
+}
+
+/* Tugma gradient — #007ac3 */
+.btn-gradient {
+  background: #007ac3;
+  color: white;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-gradient:hover {
+  background: #0066a3;
+}
+
+/* Kartochka / border elementlar — rounded + chiroyli hover */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.15);
+  border-color: rgb(191 219 254);
+}
+.link-hover {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.link-hover:hover {
+  transform: translateY(-1px);
+}
+
+/* Header nav hover */
+.nav-link-hover {
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.header-network-line,
+.hero-network-line {
+  animation: headerLinePulse 2.5s ease-in-out infinite;
+}
+.header-network-dot,
+.hero-network-dot {
+  animation: headerDotPulse 2s ease-in-out infinite;
+}
+@keyframes headerLinePulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+@keyframes headerDotPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Orqa fonda suzuvchi pastel ko'k sharlar */
+.animate-float-sphere {
+  animation: floatSphere 20s ease-in-out infinite;
+}
+@keyframes floatSphere {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(25px, -30px);
+    opacity: 0.75;
+  }
+}
+
+/* Footer promo: yozuv katta-kichik, tugma yonib turishi */
+.footer-promo-text-pulse {
+  animation: footerPromoTextPulse 2s ease-in-out infinite;
+}
+@keyframes footerPromoTextPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+.footer-promo-btn-glow {
+  animation: footerPromoBtnGlow 1.5s ease-in-out infinite;
+}
+@keyframes footerPromoBtnGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px 2px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-promo-gradient {
+  background: linear-gradient(135deg, #020b1c 0%, #041436 50%, #020617 100%);
+}
+
+/* Corner sticker gentle up/down float */
+.sticker-float-y {
+  animation: stickerFloatY 3s ease-in-out infinite;
+}
+@keyframes stickerFloatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* How it works arrow animation */
+.get-started-arrow {
+  transition: transform 0.3s ease;
+}
+.get-started-link:hover .get-started-arrow {
+  transform: translateX(4px);
+}
+
+/* Transparency 'Get Started' animated arrow */
+.transparency-link:hover .transparency-arrow {
+  transform: translateX(4px);
+}
+.transparency-arrow {
+  transition: transform 0.25s ease;
+}
+
+/* Hero right glass card animation */
+.hero-glass-float {
+  animation: heroGlassFloat 10s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes heroGlassFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0.5deg);
+  }
+  75% {
+    transform: translateY(12px) rotate(1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* About "How it works" step dots pulsing */
+.step-dot-pulse {
+  animation: stepDotPulse 2.2s ease-in-out infinite;
+}
+@keyframes stepDotPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 18px 6px rgba(59, 130, 246, 0.9);
+    transform: scale(1.1);
+  }
+}
