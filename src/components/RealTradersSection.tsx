@@ -42,15 +42,37 @@ export default function RealTradersSection() {
             <div className="group relative max-w-lg w-full rounded-3xl border border-[#1e40af] bg-white/5 backdrop-blur-xl p-6 sm:p-7 shadow-[0_30px_100px_rgba(15,23,42,0.95)]">
               <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-blue-400/0 group-hover:ring-blue-400/60 transition" />
               <div className="relative z-10 flex flex-col gap-4">
-                <div className="inline-flex items-center gap-2 rounded-full bg-[#007ac3]/15 text-[#007ac3] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] w-max mx-auto border border-[#1e40af]/60">
-                  <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#007ac3] text-white text-[10px]">
-                    ℹ
+                <div className="inline-flex items-center gap-4 rounded-full bg-[#020824]/90 text-[#60a5fa] pl-3 pr-6 py-2.5 text-xs sm:text-sm font-semibold uppercase tracking-[0.22em] w-max mx-auto border border-[#1e40af]/70">
+                  <span className="inline-flex h-14 w-14 items-center justify-center rounded-[1.4rem] bg-gradient-to-br from-sky-500/25 via-blue-500/20 to-blue-700/40 text-sky-50 ring-1 ring-blue-300/70">
+                    <svg
+                      className="h-7 w-7"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 5h14v10H9l-4 4V5z"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M9 9h6"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </span>
-                  Registered in Geneva
+                  <span className="text-sm sm:text-base bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
+                    Registered in Geneva
+                  </span>
                 </div>
                 <p className="text-center text-slate-200 text-sm sm:text-base leading-relaxed">
                   Alpha Forex Capital operates a simulated evaluation program and is{" "}
-                  <span className="font-semibold text-slate-50">registered in Geneva</span>. We focus on transparent
+                  <span className="font-semibold text-slate-50 text-base sm:text-lg">registered in Geneva</span>. We focus on transparent
                   conditions, fast evaluations, and reliable trader support.
                 </p>
                 <p className="text-center text-xs sm:text-sm text-slate-400">
