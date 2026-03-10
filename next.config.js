@@ -3,6 +3,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  trailingSlash: true,
   allowedDevOrigins: ["*.preview.same-app.com"],
   images: {
     unoptimized: true,
