@@ -53,28 +53,22 @@ export default function FAQPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#020617] text-slate-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900">
       <div className="fixed top-0 left-0 right-0 z-50">
         <Header />
       </div>
 
-      <div className="pt-40 pb-20 px-4 sm:px-6 relative overflow-hidden">
-        {/* Orqa fon glowlar */}
-        <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute top-[-20%] left-[5%] h-[32rem] w-[32rem] rounded-full bg-blue-500/10 blur-3xl" />
-          <div className="absolute bottom-[-20%] right-[-5%] h-[32rem] w-[32rem] rounded-full bg-cyan-500/10 blur-3xl" />
-        </div>
-
+      <div className="pt-40 pb-20 px-4 sm:px-6">
         <AnimatedPageContent className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
-              <span className="text-slate-50">Frequently Asked </span>
-              <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-slate-900">
+              Frequently Asked{" "}
+              <span className="bg-gradient-to-r from-sky-500 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
                 Questions
               </span>
             </h1>
-            <p className="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-              Find quick answers about our one-phase evaluation, profit split, rules, and payouts — all in one place.
+            <p className="text-slate-600 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+              Find clear answers about our evaluation model, profit split, rules, and payouts — all in one clean view.
             </p>
           </div>
 
@@ -86,20 +80,20 @@ export default function FAQPage() {
                 onOpenChange={() => toggleItem(index)}
               >
                 <CollapsibleTrigger className="w-full">
-                  <div className="flex items-center justify-between w-full px-5 py-4 sm:px-6 sm:py-5 rounded-2xl border border-slate-700/80 bg-white/5 hover:bg-white/10 backdrop-blur-xl shadow-[0_20px_60px_rgba(15,23,42,0.9)] text-left transition-colors duration-200">
-                    <h3 className="text-base sm:text-lg font-semibold text-slate-50">
+                  <div className="flex items-center justify-between w-full px-5 py-4 sm:px-6 sm:py-5 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 shadow-[0_10px_25px_rgba(255,255,255,0.2)] hover:shadow-[0_16px_40px_rgba(255,255,255,0.32)] text-left transition-all duration-300 ease-out">
+                    <h3 className="text-base sm:text-lg font-semibold text-slate-900">
                       {faq.question}
                     </h3>
                     <ChevronDown
-                      className={`w-5 h-5 text-[#00b4ff] transition-transform duration-200 ${
+                      className={`w-5 h-5 text-slate-500 transition-transform duration-200 ${
                         openItems.includes(index) ? "rotate-180" : ""
                       }`}
                     />
                   </div>
                 </CollapsibleTrigger>
-                <CollapsibleContent>
-                  <div className="mt-2 px-5 py-4 sm:px-6 sm:py-5 rounded-2xl border border-slate-700/80 bg-slate-900/60 backdrop-blur-xl">
-                    <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
+                <CollapsibleContent className="data-[state=closed]:animate-none data-[state=open]:animate-none">
+                  <div className="mt-2 px-5 py-4 sm:px-6 sm:py-5 rounded-2xl border border-slate-200 bg-slate-50 shadow-[0_8px_20px_rgba(255,255,255,0.16)] hover:shadow-[0_14px_32px_rgba(255,255,255,0.26)] transition-all duration-300 ease-out">
+                    <p className="text-sm sm:text-base text-slate-800 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

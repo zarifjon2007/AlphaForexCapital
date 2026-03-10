@@ -46,11 +46,11 @@ export default function RealTradersSection() {
                   <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#007ac3] text-white text-[10px]">
                     ℹ
                   </span>
-                  Registered in Cyprus
+                  Registered in Geneva
                 </div>
                 <p className="text-center text-slate-200 text-sm sm:text-base leading-relaxed">
                   Alpha Forex Capital operates a simulated evaluation program and is{" "}
-                  <span className="font-semibold text-slate-50">registered in Cyprus</span>. We focus on transparent
+                  <span className="font-semibold text-slate-50">registered in Geneva</span>. We focus on transparent
                   conditions, fast evaluations, and reliable trader support.
                 </p>
                 <p className="text-center text-xs sm:text-sm text-slate-400">

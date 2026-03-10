@@ -43,7 +43,7 @@ export default function ProfitTargetsSection() {
           </div>
 
           {/* Heading */}
-          <h3 className="text-5xl md:text-[3.5rem] font-bold text-slate-50 mb-8">
+          <h3 className="text-4xl sm:text-5xl md:text-[3.5rem] font-bold text-slate-50 mb-8 text-center leading-tight max-w-xs sm:max-w-none mx-auto">
             <span className="text-slate-50">Achievable </span>
             <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
               Profit Targets
@@ -52,17 +52,12 @@ export default function ProfitTargetsSection() {
 
           {/* Copy */}
           <p className="text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto">
-            Our profit targets are structured to be both attainable and highly competitive
-            within the industry. Depending on the challenge selected, targets range from{" "}
-            <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold">
-              5%
-            </span>{" "}
-            to{" "}
+            Our profit targets are structured to be both attainable and highly competitive within the industry.
+            Depending on the challenge selected, targets are set at{" "}
             <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold">
               10%
             </span>
-            , offering traders realistic
-            and balanced benchmarks. This approach empowers traders to reach their goals
+            , offering traders realistic and balanced benchmarks. This approach empowers traders to reach their goals
             efficiently while fostering consistent growth and long-term success.
           </p>
 

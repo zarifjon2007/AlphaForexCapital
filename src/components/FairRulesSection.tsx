@@ -52,14 +52,14 @@ export default function FairRulesSection() {
         </h2>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
           {rules.map((r, i) => (
             <div
               key={i}
-              className="relative rounded-3xl border border-slate-700/80 bg-white/5 backdrop-blur-lg p-6 md:p-7 shadow-[0_26px_80px_rgba(15,23,42,0.9)] transition-all duration-300 hover:border-blue-500 hover:shadow-[0_32px_100px_rgba(59,130,246,0.75)]"
+              className="relative rounded-3xl border border-blue-400/80 bg-slate-900/35 backdrop-blur-2xl p-6 md:p-7 shadow-[0_32px_110px_rgba(56,189,248,0.85)] transition-all duration-300 hover:border-blue-400 hover:shadow-[0_40px_130px_rgba(56,189,248,1)]"
             >
               {/* Icon */}
-              <div className="sticker-float-y mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-500/15 border border-blue-400/40 text-blue-300">
+              <div className="sticker-float-y mb-5 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500/25 via-blue-500/20 to-blue-700/40 ring-1 ring-blue-300/70 shadow-[0_0_26px_rgba(56,189,248,0.8)] text-sky-50">
                 {i === 0 && (
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M4 12h16M4 17h10M4 7h7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
@@ -120,7 +120,7 @@ export default function FairRulesSection() {
                 )}
               </div>
 
-              <h3 className="text-xl font-semibold text-slate-50 mb-3">
+              <h3 className="text-xl font-semibold bg-gradient-to-r from-slate-50 via-cyan-300 to-blue-400 bg-clip-text text-transparent mb-3">
                 {r.title}
               </h3>
               <p className="text-slate-200 leading-relaxed text-sm">

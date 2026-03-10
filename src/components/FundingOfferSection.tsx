@@ -62,11 +62,8 @@ export default function FundingOfferSection() {
                 <p>
                   <span className="font-semibold text-slate-50">Phase 1:</span> 10% Profit Target
                 </p>
-                <p>
-                  <span className="font-semibold text-slate-50">Phase 2:</span> 5% Profit Target
-                </p>
                 <p className="text-slate-400 text-[11px] sm:text-xs">
-                  Pass both phases to unlock your Performance Account and earn certificates.
+                  Pass the evaluation phase to unlock your Performance Account and earn certificates.
                 </p>
               </div>
             </div>
@@ -108,7 +105,7 @@ export default function FundingOfferSection() {
                     : "bg-slate-900/60 text-slate-200 border border-slate-700 hover:border-[#007ac3] hover:text-[#007ac3]"
                 }`}
               >
-                {challenge.label.replace("$", "")}k
+                {challenge.label.replace("$", "")}
               </button>
             ))}
           </div>

@@ -4,6 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   trailingSlash: true,
+  output: 'export',
   allowedDevOrigins: ["*.preview.same-app.com"],
   images: {
     unoptimized: true,
