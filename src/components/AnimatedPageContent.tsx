@@ -9,7 +9,7 @@ const slideUp = {
     y: 0,
     transition: {
       duration: 0.65,
-      ease: [0.33, 1, 0.68, 1],
+      ease: [0.33, 1, 0.68, 1] as any,
     },
   },
 }
