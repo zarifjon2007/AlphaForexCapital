@@ -1,7 +1,5 @@
 "use client"
 
-import Image from "next/image"
-import Logo from "@/app/highlights/photo_2026-03-11_09-13-37.jpg"
 import Link from "next/link"
 import AdminPricingPanel from "@/components/AdminPricingPanel"
 
@@ -34,7 +32,7 @@ const bottomLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-transparent text-slate-100 border-t border-slate-800/60">
+    <footer className="relative bg-[#020617] text-slate-100 border-t border-slate-800/60">
       {/* Yuqori promo banner — zamonaviy pill style */}
       <div className="footer-promo-gradient w-full py-5 sm:py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -66,18 +64,11 @@ export default function Footer() {
       {/* Asosiy footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16">
-          {/* Chap: logo + info kartochka */}
+          {/* Chap: info kartochka (matnli logo tepada) */}
           <div className="lg:max-w-[340px]">
-            <Link href="/" className="inline-block mb-6">
-              <Image
-                src={Logo}
-                alt="Alpha Forex Capital Logo"
-                width={200}
-                height={80}
-                className="object-contain h-9 sm:h-10 w-auto"
-                unoptimized
-              />
-            </Link>
+            <p className="mb-4 text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
+              Alfa Forex Capital
+            </p>
             <div className="rounded-2xl bg-white/5 backdrop-blur-xl border border-slate-600/60 p-4 sm:p-5 shadow-[0_24px_70px_rgba(15,23,42,0.9)]">
               <p className="text-sm text-slate-200">
                 Registered in <span className="text-[#007ac3] font-semibold">Geneva</span>

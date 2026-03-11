@@ -106,7 +106,7 @@ export default function AdminPricingPanel() {
               <p className="text-slate-400 text-[11px] mb-3">
                 Enter admin password to edit pricing.
               </p>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                 <input
                   type="password"
                   value={password}
@@ -125,7 +125,7 @@ export default function AdminPricingPanel() {
                       setAuthError("Incorrect password")
                     }
                   }}
-                  className="inline-flex items-center justify-center px-3 py-1.5 rounded-md bg-sky-500 hover:bg-sky-400 text-white font-semibold text-[11px] sm:text-xs transition-colors"
+                  className="inline-flex items-center justify-center px-3 py-1.5 rounded-md bg-sky-500 hover:bg-sky-400 text-white font-semibold text-[11px] sm:text-xs transition-colors w-full sm:w-auto"
                 >
                   Enter
                 </button>
