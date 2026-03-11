@@ -152,9 +152,7 @@ export default function AnniversaryOfferModal() {
             {/* CTA */}
             <div className="px-6 sm:px-8 pb-5 sm:pb-6">
               <motion.a
-                href="https://piptriontraders.com/login/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/#pricing"
                 className="inline-flex w-full items-center justify-center rounded-full bg-[#007ac3] text-white font-semibold text-sm sm:text-base py-3 sm:py-3.5 shadow-lg shadow-[#007ac3]/40 hover:bg-[#0066a3] transition-colors"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 1.8, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}

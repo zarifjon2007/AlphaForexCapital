@@ -88,23 +88,22 @@ export default function Header() {
               variant="outline"
               size="sm"
               className="rounded-[8px] h-12 px-8 text-base font-semibold border-[#007ac3] text-[#007ac3] bg-transparent hover:bg-[#007ac3]/5 hover:text-[#007ac3] hover:border-[#007ac3] transition-colors"
-              asChild
             >
-              <a href="https://piptriontraders.com/login/" target="_blank" rel="noopener noreferrer">Log in</a>
+              Log in
             </Button>
             <Button
               size="sm"
               className="rounded-[8px] h-12 px-8 text-base font-semibold btn-gradient text-white btn-lift shadow-[0_0_25px_rgba(56,189,248,0.8)]"
               asChild
             >
-              <a href="https://piptriontraders.com/login/" target="_blank" rel="noopener noreferrer">Get Started</a>
+              <Link href="/#pricing">Get Started</Link>
             </Button>
           </div>
 
           {/* Mobile: o'ngdagi tugmalar + menu */}
           <div className="md:hidden flex items-center gap-2">
-            <Button variant="outline" size="sm" className="border-[#007ac3] text-[#007ac3] bg-transparent" asChild>
-              <a href="https://piptriontraders.com/login/" target="_blank" rel="noopener noreferrer">Log in</a>
+            <Button variant="outline" size="sm" className="border-[#007ac3] text-[#007ac3] bg-transparent cursor-not-allowed opacity-70">
+              Log in
             </Button>
             <button
               type="button"
@@ -148,15 +147,13 @@ export default function Header() {
             <Link href="/faq" onClick={() => setMenuOpen(false)} className="block rounded-xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all duration-200">
               FAQ
             </Link>
-            <a
-              href="https://piptriontraders.com/login/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/#pricing"
               onClick={() => setMenuOpen(false)}
               className="block rounded-xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all duration-200"
             >
               Get Started
-            </a>
+            </Link>
             <a
               href="https://piptriontraders.com/login/"
               target="_blank"

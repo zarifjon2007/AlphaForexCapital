@@ -58,9 +58,7 @@ export default function FeatureCardsSection() {
                 from signup to performance reporting.
               </p>
               <a
-                href="https://piptriontraders.com/login/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/#pricing"
                 className="get-started-link mt-4 inline-flex items-center gap-2 text-[#00b4ff] hover:text-[#7dd3fc] font-semibold link-hover rounded-lg py-1 -my-1"
               >
                 Get Started <ArrowRight className="get-started-arrow h-4 w-4" />

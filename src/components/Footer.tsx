@@ -12,7 +12,7 @@ const footerNav = {
   platform: [
     { name: "Home", href: "/" },
     { name: "How It Works", href: "/about" },
-    { name: "Dashboard", href: "https://piptriontraders.com/login/", external: true },
+    { name: "Dashboard", href: "/login", external: false },
   ],
   about: [
     { name: "About Us", href: "/about" },
@@ -50,9 +50,7 @@ export default function Footer() {
           </div>
 
           <Link
-            href="https://piptriontraders.com/login/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/#pricing"
             className="inline-flex items-center gap-2 rounded-[8px] h-12 px-7 sm:px-8 text-sm sm:text-base font-semibold btn-gradient text-white btn-lift shadow-[0_0_25px_rgba(56,189,248,0.8)] transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98]"
           >
             <span className="text-lg">🎁</span>
@@ -77,9 +75,7 @@ export default function Footer() {
                 Learn more about our simulated evaluation programs.
               </p>
               <a
-                href="https://piptriontraders.com/login/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/login"
                 className="mt-4 inline-flex w-full sm:w-auto items-center justify-center rounded-[8px] h-12 px-6 text-sm font-semibold btn-gradient text-white btn-lift shadow-[0_0_25px_rgba(56,189,248,0.8)] transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98]"
               >
                 Access Dashboard

@@ -39,7 +39,10 @@ export default function FundingOfferSection() {
     : "$0"
 
   return (
-    <section className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-12 mt-7 bg-gradient-to-br from-[#020b1c] via-[#041436] to-[#020617] rounded-3xl">
+    <section
+      id="pricing"
+      className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-12 mt-7 bg-gradient-to-br from-[#020b1c] via-[#041436] to-[#020617] rounded-3xl"
+    >
       <motion.div
         className="rounded-3xl bg-[#030712] shadow-[0_30px_90px_rgba(0,0,0,0.9)] border border-slate-800/80 overflow-hidden"
         initial={{ opacity: 0, y: 40 }}
@@ -147,9 +150,7 @@ export default function FundingOfferSection() {
                 className="inline-flex items-center justify-center rounded-[999px] bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-xs sm:text-sm px-5 sm:px-6 py-2.5"
               >
                 <Link
-                  href="https://piptriontraders.com/login/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/#pricing"
                   className="inline-flex items-center justify-center gap-2 uppercase tracking-[0.16em]"
                 >
                   🎉 CLAIM ANNIVERSARY OFFER – GET FREE CHALLENGE 🎂

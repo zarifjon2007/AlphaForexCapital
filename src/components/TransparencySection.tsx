@@ -1,10 +1,10 @@
 "use client";
 
 const FEATURES = [
-  { id: "1", title: "Payouts On-Demand", desc: "Cash out your profits anytime, even multiple times a day.", href: "https://piptriontraders.com/login/" },
-  { id: "2", title: "Lightning-Fast Funding", desc: "Pass the challenge in just 1 trade. No time limits, no restrictions.", href: "https://piptriontraders.com/login/" },
-  { id: "3", title: "Trader-Friendly Rules", desc: "No consistency rules, no profit caps, no limits—trade your way with full freedom.", href: "https://piptriontraders.com/login/" },
-  { id: "4", title: "Elite Trading Conditions", desc: "Tier-1 exchange liquidity, ultra-tight spreads, and deep order books for a pro-level edge.", href: "https://piptriontraders.com/login/" },
+  { id: "1", title: "Payouts On-Demand", desc: "Cash out your profits anytime, even multiple times a day.", href: "/#pricing" },
+  { id: "2", title: "Lightning-Fast Funding", desc: "Pass the challenge in just 1 trade. No time limits, no restrictions.", href: "/#pricing" },
+  { id: "3", title: "Trader-Friendly Rules", desc: "No consistency rules, no profit caps, no limits—trade your way with full freedom.", href: "/#pricing" },
+  { id: "4", title: "Elite Trading Conditions", desc: "Tier-1 exchange liquidity, ultra-tight spreads, and deep order books for a pro-level edge.", href: "/#pricing" },
 ];
 
 export default function TransparencySection() {
