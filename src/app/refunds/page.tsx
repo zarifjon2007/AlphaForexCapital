@@ -115,8 +115,3 @@ export default function RefundsPolicyPage() {
     </div>
   )
 }
-
-
-
-SUPABASE_URL=https://kstochbfbxqlacbavkdl.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzdG9jaGJmYnhxbGFjYmF2a2RsIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzIyODI5OCwiZXhwIjoyMDg4ODA0Mjk4fQ.1lV7AE4ZDGiVspN6BKo5HHkK9iiwWYEDfWsUYRW7H3g
