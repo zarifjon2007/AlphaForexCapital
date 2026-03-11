@@ -4,7 +4,6 @@ import Link from "next/link"
 
 const socials = [
   { name: "Instagram", href: "/faq" },
-  { name: "Twitter", href: "/faq" },
   { name: "Telegram", href: "/faq" },
 ]
 

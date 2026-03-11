@@ -34,33 +34,18 @@ export default function SupportFeaturesSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight text-slate-50">
-            Unrivaled{" "}
+        <div className="text-center mb-14">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-slate-50">
+            24/7{" "}
             <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
-              Support
+              Live Support
             </span>
           </h2>
 
-          <p className="text-lg text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed sm:leading-8">
-            Experience dedicated mentorship, transparent evaluation processes, and
-            educational resources that empower traders to excel. Our team ensures every
-            step of your journey is guided, reliable, and effective.
+          <p className="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed sm:leading-8">
+            In-house Support: We have a dedicated in-house support team ready to assist you. You will find the support
+            options directly within your user dashboard.
           </p>
-
-          <Button
-            size="lg"
-            className="mb-16 rounded-[8px] h-12 px-8 text-base font-semibold btn-gradient text-white btn-lift shadow-[0_0_25px_rgba(56,189,248,0.8)] transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98]"
-            asChild
-          >
-            <Link
-              href="https://t.me/PROPF_SUP"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Talk to Support
-            </Link>
-          </Button>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

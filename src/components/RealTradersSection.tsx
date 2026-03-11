@@ -13,9 +13,9 @@ export default function RealTradersSection() {
         <div className="absolute right-[-10%] bottom-[-20%] h-[36rem] w-[36rem] rounded-full bg-cyan-500/10 blur-3xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
+      <div className="relative max-w-7xl mx-auto px-3">
+        <div className="grid lg:grid-cols-2 gap-12 items-center place-items-center">
+          <div className="text-center lg:text-left">
             <h2 className="text-5xl md:text-6xl font-bold text-slate-50 mb-8 leading-tight">
               Real traders,{" "}
               <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
@@ -29,13 +29,15 @@ export default function RealTradersSection() {
               <span className="font-semibold text-[#007ac3]">Discord</span> to verify payouts and learn from the community.
             </p>
 
-            <Button
-              size="lg"
-              className="rounded-[8px] h-12 px-8 text-base font-semibold btn-gradient text-white btn-lift shadow-[0_0_25px_rgba(56,189,248,0.8)]"
-              asChild
-            >
-              <Link href="/funding">Get Funded</Link>
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button
+                size="lg"
+                className="rounded-[8px] h-12 px-8 text-base font-semibold btn-gradient text-white btn-lift shadow-[0_0_25px_rgba(56,189,248,0.8)]"
+                asChild
+              >
+                <Link href="/funding">Get Funded</Link>
+              </Button>
+            </div>
           </div>
 
           <div className="relative flex justify-center">

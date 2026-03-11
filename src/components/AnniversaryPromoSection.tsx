@@ -60,16 +60,16 @@ export default function AnniversaryPromoSection() {
       <div className="relative max-w-4xl mx-auto">
         {/* 1. Top banner — joyning pastidan chiqadi */}
         <motion.div
-          className="text-center py-3 mb-6"
+          className="text-center py-2 mb-5"
           initial={{ opacity: 0, y: 48 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: [0.33, 1, 0.68, 1] }}
           >
-            <p className="text-white text-sm sm:text-base font-semibold tracking-wide inline-flex items-center gap-2 flex-wrap justify-center bg-[#007ac3] px-4 py-2 rounded-full border border-white/20 shadow-sm">
-              <span>🎉</span>
+            <p className="inline-flex items-center justify-center gap-1 sm:gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 px-4 sm:px-5 py-1.5 text-[10px] sm:text-xs font-semibold tracking-[0.16em] text-white border border-white/20 shadow-[0_0_18px_rgba(56,189,248,0.55)]">
+              <span className="hidden sm:inline">🎉</span>
               2 YEAR ANNIVERSARY = LOWEST PRICES EVER
-              <span>🎂</span>
+              <span className="hidden sm:inline">🎂</span>
             </p>
         </motion.div>
 
@@ -195,17 +195,28 @@ export default function AnniversaryPromoSection() {
                   </div>
                 ))}
 
-                <div className="inline-flex items-center gap-2 rounded-full bg-green-500 text-slate-950 px-3 py-1.5 text-xs sm:text-sm shadow-md shadow-green-400/80">
-                  <span className="font-semibold">Alpha Forex Capital</span>
-                  <span className="font-extrabold">${bogoPerUnit.toLocaleString()}</span>
-                  <span className="text-[11px] font-medium">per challenge (BOGO)</span>
+                <div className="inline-flex flex-col items-start justify-center rounded-full bg-green-500 text-slate-950 px-9 py-1.5 text-xs sm:text-sm shadow-md shadow-green-400/80">
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold">Alpha Forex Capital</span>
+                    <span className="font-extrabold">${bogoPerUnit.toLocaleString()}</span>
+                  </div>
+                  <span className="text-[11px] font-medium leading-snug">
+                    per challenge (BOGO)
+                  </span>
                 </div>
               </div>
 
-              <p className="mt-1 text-xs sm:text-sm text-slate-200 flex items-center gap-2">
-                <span>💡</span>
-                Thanks to BOGO, you effectively pay{" "}
-                <span className="font-semibold text-green-400">50% less per challenge</span> compared to any competitor.
+              <p className="mt-1 text-xs sm:text-sm text-slate-200">
+                <span className="block">
+                  <span className="mr-1">💡</span>
+                  Thanks to BOGO, you effectively pay
+                </span>
+                <span className="block font-semibold text-green-400">
+                  50% less per challenge
+                </span>
+                <span className="block">
+                  compared to any competitor.
+                </span>
               </p>
             </div>
           </div>
@@ -223,7 +234,7 @@ export default function AnniversaryPromoSection() {
             href="https://piptriontraders.com/login/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-base sm:text-lg py-3.5 sm:py-4 px-8 sm:px-10 uppercase tracking-[0.22em] shadow-[0_0_35px_rgba(56,189,248,0.85)]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-xs sm:text-sm py-2.5 sm:py-3 px-6 sm:px-8 uppercase tracking-[0.18em] shadow-[0_0_24px_rgba(56,189,248,0.7)]"
             animate={{ scale: [1, 1.04, 1] }}
             transition={{ duration: 1.9, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
             whileHover={{ scale: 1.07 }}

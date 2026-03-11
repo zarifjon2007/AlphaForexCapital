@@ -111,7 +111,7 @@ export default function PromoBanner() {
                 href="https://piptriontraders.com/login/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-sm sm:text-base md:text-lg py-3.5 px-10 sm:px-14 uppercase tracking-[0.22em] shadow-[0_0_35px_rgba(56,189,248,0.85)]"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-[11px] sm:text-xs md:text-sm py-2.5 sm:py-3 px-6 sm:px-8 uppercase tracking-[0.18em] shadow-[0_0_24px_rgba(56,189,248,0.7)]"
                 animate={{ scale: [1, 1.04, 1] }}
                 transition={{ duration: 1.9, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
                 whileHover={{ scale: 1.07 }}

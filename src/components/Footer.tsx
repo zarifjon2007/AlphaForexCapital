@@ -176,7 +176,6 @@ export default function Footer() {
               <div className="flex items-center gap-3 text-slate-400 text-xs">
                 <span className="text-slate-500">Socials:</span>
                 <a href="/faq" className="hover:text-[#00b4ff]">TG</a>
-                <a href="/faq" className="hover:text-[#00b4ff]">Tw</a>
                 <a href="/faq" className="hover:text-[#00b4ff]">IG</a>
               </div>
             </div>
