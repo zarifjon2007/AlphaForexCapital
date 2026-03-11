@@ -47,15 +47,10 @@ export default function WhyChooseSection() {
           </div>
 
           <div className="grid gap-6">
-            <Card className="p-8 text-center rounded-2xl bg-white/5 border border-[#1e40af] backdrop-blur-xl shadow-[0_22px_60px_rgba(15,23,42,0.85)]">
-              <div className="text-5xl font-extrabold text-[#007ac3] mb-2 leading-none">130+</div>
-              <div className="text-xl text-slate-700 font-medium">Countries</div>
-              <div className="mx-auto mt-4 h-px w-16 bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
-            </Card>
-            <Card className="p-8 text-center rounded-2xl bg-white/5 border border-[#1e40af] backdrop-blur-xl shadow-[0_22px_60px_rgba(15,23,42,0.85)]">
-              <div className="text-5xl font-extrabold text-[#007ac3] mb-2 leading-none">24/7</div>
-              <div className="text-xl text-slate-700 font-medium">Telegram Support</div>
-              <div className="mx-auto mt-4 h-px w-16 bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
+            <Card className="p-10 text-center rounded-3xl bg-white/5 border border-[#1e40af] backdrop-blur-xl shadow-[0_26px_80px_rgba(15,23,42,0.95)]">
+              <div className="text-6xl md:text-7xl font-extrabold text-[#007ac3] mb-3 leading-none">125+</div>
+              <div className="text-2xl text-slate-700 font-semibold">Countries</div>
+              <div className="mx-auto mt-5 h-px w-24 bg-gradient-to-r from-transparent via-blue-500/60 to-transparent" />
             </Card>
           </div>
         </div>

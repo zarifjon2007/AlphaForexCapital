@@ -69,7 +69,7 @@ export default function AboutPage() {
   })
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-100">
+    <div className="min-h-screen bg-[#020617] text-slate-100">
       <div className="fixed top-0 left-0 right-0 z-50">
         <Header />
       </div>

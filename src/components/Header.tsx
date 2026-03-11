@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
-import Logo from "@/app/highlights/landscape logo with dark blue bg_.png"
+import Logo from "@/app/highlights/photo_2026-03-11_09-13-37.jpg"
 
 export default function Header() {
   const [showBanner, setShowBanner] = useState(true)
@@ -13,7 +13,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="w-full bg-[#030e2c]/95 backdrop-blur-sm shadow-sm relative z-50">
+    <header className="w-full bg-black/95 backdrop-blur-sm shadow-[0_10px_30px_rgba(0,0,0,0.9)] relative z-50">
       {/* Top info bar — ko'k (rasmdagi kabi) */}
       {showBanner && (
         <div className="w-full bg-[#007ac3] text-white animate-fade-in">
@@ -33,8 +33,8 @@ export default function Header() {
         </div>
       )}
 
-      {/* Nav bar — logo bilan bir xil dark blue */}
-      <div className="w-full px-4 sm:px-6 py-1.5 sm:py-2 bg-[#030e2c] border-b border-slate-800/80">
+      {/* Nav bar — logo bilan bir xil dark background */}
+      <div className="w-full px-4 sm:px-6 py-1.5 sm:py-2 bg-black border-b border-slate-800/80">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center flex-shrink-0">
             <Image

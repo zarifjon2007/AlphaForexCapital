@@ -53,7 +53,7 @@ export default function FAQPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+    <div className="min-h-screen bg-[#020617] text-slate-100">
       <div className="fixed top-0 left-0 right-0 z-50">
         <Header />
       </div>

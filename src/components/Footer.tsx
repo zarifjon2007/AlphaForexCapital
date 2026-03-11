@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import Logo from "@/app/highlights/landscape logo with dark blue bg_.png"
+import Logo from "@/app/highlights/photo_2026-03-11_09-13-37.jpg"
 import Link from "next/link"
 import AdminPricingPanel from "@/components/AdminPricingPanel"
 
@@ -80,7 +80,7 @@ export default function Footer() {
             </Link>
             <div className="rounded-2xl bg-white/5 backdrop-blur-xl border border-slate-600/60 p-4 sm:p-5 shadow-[0_24px_70px_rgba(15,23,42,0.9)]">
               <p className="text-sm text-slate-200">
-                Registered in <span className="text-[#007ac3] font-semibold">Cyprus</span>
+                Registered in <span className="text-[#007ac3] font-semibold">Geneva</span>
               </p>
               <p className="mt-2 text-sm text-slate-300 leading-snug">
                 Learn more about our simulated evaluation programs.

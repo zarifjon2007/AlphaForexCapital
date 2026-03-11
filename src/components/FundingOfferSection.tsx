@@ -56,7 +56,7 @@ export default function FundingOfferSection() {
                 <span className="inline-flex h-6 px-2 items-center justify-center rounded-full bg-[#1e40af]/80 text-[11px] uppercase tracking-[0.16em]">
                   Most Popular
                 </span>
-                <span>Two Step</span>
+                <span>One Step</span>
               </div>
               <div className="mt-3 text-xs sm:text-sm text-slate-200 space-y-0.5">
                 <p>

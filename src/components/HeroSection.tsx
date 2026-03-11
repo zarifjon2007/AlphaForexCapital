@@ -40,9 +40,9 @@ const TRUST_STATS: Array<{
   decimals?: number
 }> = [
   { numeric: 5000, suffix: "+", line1: "Customers", line2: "worldwide" },
-  { numeric: 4.7, suffix: "/5", line1: "Trustpilot", decimals: 1 },
-  { numeric: 22, suffix: "M+", line1: "Paid in rewards", line2: "worldwide" },
-  { numeric: 78, suffix: "+", line1: "Countries", line2: "served" },
+  { numeric: 4.8, suffix: "/5", line1: "Trustpilot", decimals: 1 },
+  { numeric: 27, suffix: "M+", line1: "Paid in rewards", line2: "worldwide" },
+  { numeric: 125, suffix: "+", line1: "Countries", line2: "served" },
 ]
 
 export default function HeroSection() {
