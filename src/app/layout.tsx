@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Unbounded } from "next/font/google";
 import "./globals.css";
 import AnniversaryOfferModal from "@/components/AnniversaryOfferModal";
+import LoadingOverlay from "@/components/LoadingOverlay";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${unbounded.variable} font-sans antialiased`}>
+        <LoadingOverlay />
         <AnniversaryOfferModal />
         <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
       </body>

@@ -29,54 +29,22 @@ export default function Home() {
       </div>
 
       <HeroSection />
-      <AnimatedSection>
-        <PromoBanner />
-      </AnimatedSection>
-      <AnimatedSection>
-        <AnniversaryPromoSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <FeaturesBar />
-      </AnimatedSection>
-      <AnimatedSection>
-        <WhyChooseSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <FundingOfferSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <RealTradersSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <PlatformSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <FairRulesSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <FeatureCardsSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <TradingPotentialSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <FlexibleTradingSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <ProfitTargetsSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <TransparencySection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <SupportFeaturesSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <ContactSection />
-      </AnimatedSection>
-      <AnimatedSection>
-        <Footer />
-      </AnimatedSection>
+      <PromoBanner />
+      <AnniversaryPromoSection />
+      <FeaturesBar />
+      <WhyChooseSection />
+      <FundingOfferSection />
+      <RealTradersSection />
+      <PlatformSection />
+      <FairRulesSection />
+      <FeatureCardsSection />
+      <TradingPotentialSection />
+      <FlexibleTradingSection />
+      <ProfitTargetsSection />
+      <TransparencySection />
+      <SupportFeaturesSection />
+      <ContactSection />
+      <Footer />
     </div>
   )
 }

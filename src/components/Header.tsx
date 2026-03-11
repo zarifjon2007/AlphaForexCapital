@@ -13,7 +13,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="w-full bg-black/95 backdrop-blur-sm shadow-[0_10px_30px_rgba(0,0,0,0.9)] relative z-50">
+    <header className="w-full bg-black/95 backdrop-blur-sm shadow-[0_14px_35px_rgba(15,23,42,0.95)] relative z-50">
       {/* Top info bar — ko'k (rasmdagi kabi) */}
       {showBanner && (
         <div className="w-full bg-[#007ac3] text-white animate-fade-in">
