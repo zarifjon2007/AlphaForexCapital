@@ -81,9 +81,9 @@ export default function HeroSection() {
               animate={mounted ? { opacity: 1, y: 0 } : { opacity: 0, y: 220 }}
               transition={{ duration: 0.6, delay: 0.08, ease: [0.33, 1, 0.68, 1] }}
             >
-              Your Skills.
+              <span className="text-[#00b4ff]">Get Funded.</span>
               <br />
-              <span className="text-[#00b4ff]">Our Capital.</span>
+              <span>Trade Your Way.</span>
             </motion.h1>
 
             {/* Subhead — pastdan silliq tepaga */}
@@ -93,8 +93,8 @@ export default function HeroSection() {
               animate={mounted ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
               transition={{ duration: 0.55, delay: 0.2, ease: [0.33, 1, 0.68, 1] }}
             >
-              Prove your edge in a streamlined one-phase evaluation. Meet clear risk targets, get funded,
-              and withdraw on a predictable schedule.
+              Pass our simple one-phase challenge, access up to $4,000,000 in capital, and withdraw profits with
+              reliable weekly payouts and transparent rules. US Traders are welcome!
             </motion.p>
 
             {/* Tugmalar — pastdan silliq tepaga */}
