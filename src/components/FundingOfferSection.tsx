@@ -114,17 +114,17 @@ export default function FundingOfferSection() {
           </div>
         </div>
 
-        {/* Anniversary banner */}
+        {/* Spring event pricing banner */}
         <div className="px-4 sm:px-8 py-6 sm:py-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 rounded-2xl bg-transparent border border-[#1e3a8a] backdrop-blur-xl bg-white/5 shadow-[0_26px_80px_rgba(15,23,42,0.9)] px-4 sm:px-6 py-5 sm:py-6">
-            <div className="space-y-1">
-              <p className="text-xs sm:text-[11px] uppercase tracking-[0.22em] text-cyan-300/90">
-                🎉 2 Year Anniversary Special
-              </p>
+              <div className="space-y-1">
+                <p className="text-xs sm:text-[11px] uppercase tracking-[0.22em] text-cyan-300/90">
+                  🌱 Spring Trading Event
+                </p>
               <p className="text-3xl sm:text-4xl font-extrabold text-slate-50">{formattedPrice}</p>
               <p className="mt-1 text-[11px] sm:text-xs text-slate-300/90">One-time evaluation fee</p>
               <p className="mt-2 text-[11px] sm:text-xs text-slate-300/90">
-                🎂 Celebrate 2 years with double the challenges!
+                🌸 Limited time spring promotion with double the challenges.
               </p>
             </div>
 
@@ -153,7 +153,7 @@ export default function FundingOfferSection() {
                   href="/#pricing"
                   className="inline-flex items-center justify-center gap-2 uppercase tracking-[0.16em]"
                 >
-                  🎉 CLAIM ANNIVERSARY OFFER – GET FREE CHALLENGE 🎂
+                  🎉 CLAIM SPRING OFFER – GET FREE CHALLENGE 🌸
                 </Link>
               </motion.div>
             </div>

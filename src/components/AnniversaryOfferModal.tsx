@@ -98,15 +98,15 @@ export default function AnniversaryOfferModal() {
                 <Rocket className="h-6 w-6" />
               </div>
               <p className="text-[11px] sm:text-xs uppercase tracking-[0.22em] text-[#007ac3]/80">
-                ✨ 2 YEAR ANNIVERSARY SPECIAL ✨
+                ✨ SPRING TRADING EVENT ✨
               </p>
             </div>
 
             {/* Asosiy matn */}
             <div className="px-6 sm:px-8 text-center">
-              <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight mb-1">Celebrating 2 Years!</h2>
+              <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight mb-1">Spring Trading Event</h2>
               <p className="text-green-400 text-lg sm:text-xl font-extrabold mb-3 sm:mb-4 flex items-center justify-center gap-1.5">
-                <span>Buy One, Get One Free</span>
+                <span>Spring Special – Buy One, Get One Free</span>
                 <motion.span
                   className="inline-block text-2xl sm:text-3xl"
                   animate={{ rotate: [-15, 15, -15] }}
@@ -116,8 +116,8 @@ export default function AnniversaryOfferModal() {
                 </motion.span>
               </p>
               <p className="text-[#007ac3]/90 text-xs sm:text-sm mb-5">
-                Celebrate with us! Purchase any challenge and receive a second challenge of equal or lesser value completely
-                free.
+                Celebrate the new season with us. Purchase any challenge and receive a second challenge of equal or lesser
+                value completely free.
               </p>
             </div>
 
@@ -153,15 +153,15 @@ export default function AnniversaryOfferModal() {
             <div className="px-6 sm:px-8 pb-5 sm:pb-6">
               <motion.a
                 href="/#pricing"
-                className="inline-flex w-full items-center justify-center rounded-full bg-[#007ac3] text-white font-semibold text-sm sm:text-base py-3 sm:py-3.5 shadow-lg shadow-[#007ac3]/40 hover:bg-[#0066a3] transition-colors"
+                className="inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-sm sm:text-base py-3 sm:py-3.5 shadow-lg shadow-emerald-400/60 hover:shadow-emerald-300/80 transition-colors"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 1.8, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
               >
                 <Rocket className="mr-2 h-4 w-4" />
-                Claim Anniversary Offer
+                Claim Spring Offer
               </motion.a>
               <p className="mt-3 text-[10px] sm:text-[11px] text-slate-200/80 text-center">
-                Limited time offer. Terms and conditions apply.
+                Limited time spring offer. Terms and conditions apply.
               </p>
             </div>
           </motion.div>

@@ -38,20 +38,20 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left space-y-1">
             <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.28em] text-white/80">
-              🎉 2 Year Anniversary Offer
+              🎉 Spring Trading Event Offer
             </p>
             <p className="text-lg sm:text-xl md:text-2xl font-extrabold text-white tracking-tight">
               Buy One Challenge,&nbsp;
-              <span className="text-green-500">Get One Free</span>
+              <span className="text-emerald-400">Get One Free</span>
             </p>
             <p className="hidden sm:block text-xs sm:text-sm text-white/80">
-              Double your trading evaluation for the same price — limited time only.
+              Limited time spring promotion for traders worldwide.
             </p>
           </div>
 
           <Link
             href="/#pricing"
-            className="inline-flex items-center gap-2 rounded-[8px] h-12 px-7 sm:px-8 text-sm sm:text-base font-semibold btn-gradient text-white btn-lift shadow-[0_0_25px_rgba(56,189,248,0.8)] transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98]"
+            className="inline-flex items-center gap-2 rounded-[999px] h-11 sm:h-12 px-7 sm:px-8 text-sm sm:text-base font-semibold bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 shadow-[0_0_26px_rgba(52,211,153,0.9)] hover:shadow-[0_0_34px_rgba(52,211,153,1)] transition-transform duration-200 hover:scale-[1.04] active:scale-[0.97]"
           >
             <span className="text-lg">🎁</span>
             <span>Start Your Free BOGO Challenge</span>

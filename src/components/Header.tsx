@@ -19,7 +19,7 @@ export default function Header() {
         <div className="w-full bg-[#007ac3] text-white animate-fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-1.5 relative">
             <p className="text-center text-[11px] xs:text-xs sm:text-sm font-semibold leading-snug tracking-wide">
-              🎉 ALPHA FOREX CAPITAL 2 YEAR ANNIVERSARY 🎂
+              🎉 ALPHA FOREX CAPITAL SPRING TRADING EVENT 🎂
             </p>
             <button
               type="button"

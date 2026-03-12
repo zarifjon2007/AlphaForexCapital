@@ -26,7 +26,7 @@ export default function PromoBanner() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }}
             >
-              🎉 2 YEAR ANNIVERSARY SPECIAL 🎂
+              🎉 SPRING TRADING EVENT 🎂
             </motion.div>
 
             {/* Heading */}
@@ -39,7 +39,7 @@ export default function PromoBanner() {
             >
               ALPHA FOREX CAPITAL{" "}
               <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
-                2 YEAR ANNIVERSARY
+                SPRING TRADING EVENT
               </span>
             </motion.h2>
 
@@ -74,7 +74,7 @@ export default function PromoBanner() {
                 <div className="relative flex items-center justify-between gap-3 mb-3">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-200 mb-1">
-                      Anniversary BOGO
+                      Spring BOGO
                     </p>
                     <p className="text-sm text-slate-100/90">With BOGO you now get</p>
                   </div>
@@ -109,17 +109,17 @@ export default function PromoBanner() {
               </div>
               <motion.a
                 href="/#pricing"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-[11px] sm:text-xs md:text-sm py-2.5 sm:py-3 px-6 sm:px-8 uppercase tracking-[0.18em] shadow-[0_0_24px_rgba(56,189,248,0.7)]"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-[11px] sm:text-xs md:text-sm py-2.5 sm:py-3 px-6 sm:px-8 uppercase tracking-[0.18em] shadow-[0_0_26px_rgba(52,211,153,0.8)]"
                 animate={{ scale: [1, 1.04, 1] }}
                 transition={{ duration: 1.9, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
                 whileHover={{ scale: 1.07 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <span className="text-lg">🎁</span>
-                <span>BUY ONE GET ONE FREE</span>
+                <span>Spring Special – Buy One Get One Free</span>
               </motion.a>
               <p className="mt-3 text-[11px] sm:text-xs text-slate-300/90">
-                Celebrate 2 years of Alpha Forex Capital with our most generous evaluation offer yet.
+                Limited time spring promotion for traders worldwide.
               </p>
             </motion.div>
           </div>

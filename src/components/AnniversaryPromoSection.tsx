@@ -67,9 +67,9 @@ export default function AnniversaryPromoSection() {
           transition={{ duration: 0.6, ease: [0.33, 1, 0.68, 1] }}
           >
             <p className="inline-flex items-center justify-center gap-1 sm:gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 px-4 sm:px-5 py-1.5 text-[10px] sm:text-xs font-semibold tracking-[0.16em] text-white border border-white/20 shadow-[0_0_18px_rgba(56,189,248,0.55)]">
-              <span className="hidden sm:inline">🎉</span>
-              2 YEAR ANNIVERSARY = LOWEST PRICES EVER
-              <span className="hidden sm:inline">🎂</span>
+              <span className="hidden sm:inline">🌱</span>
+              SPRING TRADING EVENT = LOWEST PRICES EVER
+              <span className="hidden sm:inline">🌸</span>
             </p>
         </motion.div>
 
@@ -238,7 +238,7 @@ export default function AnniversaryPromoSection() {
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.98 }}
           >
-            🎉 Get Your Anniversary BOGO Deal Now
+            🎉 Get Your Spring BOGO Deal Now
           </motion.a>
         </motion.div>
       </div>
