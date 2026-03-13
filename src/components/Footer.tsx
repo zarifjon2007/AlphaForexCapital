@@ -65,7 +65,7 @@ export default function Footer() {
           
           <div className="lg:max-w-[340px]">
             <p className="mb-4 text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
-              Alfa Forex Capital
+              Alpha Forex Capital
             </p>
             <div className="rounded-2xl bg-white/5 backdrop-blur-xl border border-slate-600/60 p-4 sm:p-5 shadow-[0_24px_70px_rgba(15,23,42,0.9)]">
               <p className="text-sm text-slate-200">
