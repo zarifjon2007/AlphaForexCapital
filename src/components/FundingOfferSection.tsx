@@ -1,9 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Link from "next/link"
 import { motion } from "framer-motion"
-import { DEFAULT_CHALLENGES } from "@/lib/pricingConfig"
+import { DEFAULT_CHALLENGES, WHOP_CHECKOUT_URLS } from "@/lib/pricingConfig"
 
 export default function FundingOfferSection() {
   const [selectedId, setSelectedId] = useState<string>("100K")
@@ -37,6 +36,8 @@ export default function FundingOfferSection() {
   const formattedPrice = selectedChallenge
     ? `$${selectedChallenge.price.toLocaleString()}`
     : "$0"
+  const checkoutUrl =
+    WHOP_CHECKOUT_URLS[selectedChallenge?.id ?? "100K"] ?? "/#pricing"
 
   return (
     <section
@@ -132,7 +133,10 @@ export default function FundingOfferSection() {
               <div className="inline-flex items-center rounded-full bg-white/10 text-cyan-200 px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold border border-cyan-400/70 shadow-[0_0_22px_rgba(56,189,248,0.8)] self-start md:self-end">
                 🎁 BUY 1 GET 1 FREE – GET 2x {selectedChallenge?.label ?? "$100K"}!
               </div>
-              <motion.div
+              <motion.a
+                href={checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 animate={{
                   boxShadow: [
                     "0 0 0 0 rgba(56,189,248,0.0)",
@@ -147,15 +151,10 @@ export default function FundingOfferSection() {
                   repeatType: "loop",
                   ease: "easeInOut",
                 }}
-                className="inline-flex items-center justify-center rounded-[999px] bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-xs sm:text-sm px-5 sm:px-6 py-2.5"
+                className="inline-flex items-center justify-center gap-2 rounded-[999px] bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 font-semibold text-xs sm:text-sm px-5 sm:px-6 py-2.5 uppercase tracking-[0.16em]"
               >
-                <Link
-                  href="/#pricing"
-                  className="inline-flex items-center justify-center gap-2 uppercase tracking-[0.16em]"
-                >
-                  🎉 CLAIM SPRING OFFER – GET FREE CHALLENGE 🌸
-                </Link>
-              </motion.div>
+                🎉 CLAIM SPRING OFFER – GET FREE CHALLENGE 🌸
+              </motion.a>
             </div>
           </div>
         </div>

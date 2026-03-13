@@ -18,6 +18,18 @@ export const DEFAULT_CHALLENGES: ChallengeConfig[] = [
 // challenge price for 100K used as scale base
 export const BASE_OUR_PRICE_100K = DEFAULT_CHALLENGES.find((c) => c.id === "100K")?.price ?? 549
 
+/** Whop checkout URLs per challenge id (order: 10K, 25K, 50K, 100K, 200K, 300K, 400K, 1M) */
+export const WHOP_CHECKOUT_URLS: Record<string, string> = {
+  "10K": "https://whop.com/checkout/5nzIrZUB5Ak23x6PpD-hXn6-iYWp-dixs-hIfiZYuHy8RJ/",
+  "25K": "https://whop.com/checkout/49m0CrGet8E47CI0g1-BmVI-N4Ne-nb35-0bOvjM1Venh3/",
+  "50K": "https://whop.com/checkout/plan_Kc7Tm4glYDrPk",
+  "100K": "https://whop.com/checkout/plan_gm0i33UGovHrs",
+  "200K": "https://whop.com/checkout/plan_etzZvLicnT0uF",
+  "300K": "https://whop.com/checkout/plan_vPSevxtbXZXHZ",
+  "400K": "https://whop.com/checkout/plan_IAFEOQ44gXSAv",
+  "1M": "https://whop.com/checkout/plan_H4csewRBKMfWX",
+}
+
 export const PRICING_STORAGE_KEY = "afc_pricing_v1"
 
 export function loadChallengesFromStorage(): ChallengeConfig[] {
