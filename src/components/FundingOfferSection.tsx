@@ -56,10 +56,7 @@ export default function FundingOfferSection() {
           <div className="grid gap-4 sm:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)] items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-300 mb-2">Model</p>
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#020624] text-white px-4 py-1.5 text-xs sm:text-sm font-semibold border border-[#1e40af] shadow-[0_0_22px_rgba(30,64,175,0.8)]">
-                <span className="inline-flex h-6 px-2 items-center justify-center rounded-full bg-[#1e40af]/80 text-[11px] uppercase tracking-[0.16em]">
-                  Most Popular
-                </span>
+              <div className="inline-flex items-center rounded-full bg-[#020624] text-white px-4 py-1.5 text-xs sm:text-sm font-semibold border border-[#1e40af] shadow-[0_0_22px_rgba(30,64,175,0.8)]">
                 <span>One Step</span>
               </div>
               <div className="mt-3 text-xs sm:text-sm text-slate-200 space-y-0.5">
@@ -74,11 +71,24 @@ export default function FundingOfferSection() {
 
             {/* Model type & platform */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="rounded-2xl border border-[#1e40af] bg-white/5 backdrop-blur-xl px-4 py-4 flex flex-col justify-between shadow-[0_22px_60px_rgba(15,23,42,0.9)]">
+              <div
+                className={`rounded-2xl border backdrop-blur-xl px-4 py-4 flex flex-col justify-between shadow-[0_22px_60px_rgba(15,23,42,0.9)] ${
+                  selectedId === "200K"
+                    ? "border-[#007ac3] bg-[#007ac3]/10"
+                    : "border-[#1e40af] bg-white/5"
+                }`}
+              >
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300 mb-2">Model Type</p>
-                <div className="inline-flex w-max items-center rounded-full bg-[#007ac3]/10 text-[#007ac3] px-4 py-1.5 text-xs font-semibold border border-[#007ac3]/40">
-                  PRO
-                </div>
+                {selectedId === "200K" ? (
+                  <div className="flex flex-col gap-0 leading-none [&_p]:m-0 [&_p]:p-0">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#007ac3]">Most Popular</p>
+                    <p className="text-xs font-semibold text-[#007ac3]">PRO</p>
+                  </div>
+                ) : (
+                  <div className="inline-flex w-max items-center rounded-full bg-[#007ac3]/10 text-[#007ac3] px-4 py-1.5 text-xs font-semibold border border-[#007ac3]/40">
+                    PRO
+                  </div>
+                )}
               </div>
               <div className="rounded-2xl border border-[#1e40af] bg-white/5 backdrop-blur-xl px-4 py-4 flex flex-col justify-between shadow-[0_22px_60px_rgba(15,23,42,0.9)]">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300 mb-2">Platform</p>
@@ -88,7 +98,6 @@ export default function FundingOfferSection() {
                     5
                   </span>
                 </div>
-                <p className="mt-1 text-[11px] text-slate-400">Most Popular</p>
               </div>
             </div>
           </div>
