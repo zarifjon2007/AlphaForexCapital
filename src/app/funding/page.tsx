@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
@@ -11,16 +10,15 @@ type Plan = {
   amount: string
   price: string
   features: string[]
-  link: string
 }
 
 const plans: Plan[] = [
-  { amount: "$25K", price: "299", features: [], link: "https://pay.boomfi.xyz/38JNcPeBgSmUsB7LZ7M1iMFNWR5" },
-  { amount: "$50K", price: "349", features: [], link: "https://pay.boomfi.xyz/30sIUuV8vd5Hg2loW5Jmmpm00Vv" },
-  { amount: "$100K", price: "549", features: [], link: "https://pay.boomfi.xyz/30sIksp8Yy44Zofy7RDISvZgtQb" },
-  { amount: "$200K", price: "1049", features: [], link: "https://pay.boomfi.xyz/30sIvT6D7fOpVEmb3GGDKYYtesb" },
-  { amount: "$300K", price: "1499", features: [], link: "https://pay.boomfi.xyz/30sIxqNXB4rUeIzI5QnChRP7hAz" },
-  { amount: "$400K", price: "1999", features: [], link: "https://pay.boomfi.xyz/30sIzxJuUQTVX3nMSrPHqvYMtL6" },
+  { amount: "$25K", price: "299", features: [] },
+  { amount: "$50K", price: "349", features: [] },
+  { amount: "$100K", price: "549", features: [] },
+  { amount: "$200K", price: "1049", features: [] },
+  { amount: "$300K", price: "1499", features: [] },
+  { amount: "$400K", price: "1999", features: [] },
 ]
 
 const rows = [
@@ -62,15 +60,12 @@ export default function FundingPage() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             {plans.map((p) => (
-              <a
+              <span
                 key={p.amount}
-                href={p.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-slate-300 px-3 sm:px-5 py-2 text-xs sm:text-sm md:text-base text-slate-700 hover:text-slate-900 hover:border-[#007ac3] hover:bg-[#007ac3]/10 transition-all duration-200 link-hover"
+                className="rounded-full border border-slate-300 px-3 sm:px-5 py-2 text-xs sm:text-sm md:text-base text-slate-700"
               >
                 {p.amount.replace("$", "")} | {p.price} USD
-              </a>
+              </span>
             ))}
           </div>
         </motion.div>
