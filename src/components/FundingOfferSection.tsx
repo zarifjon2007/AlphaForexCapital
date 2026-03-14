@@ -55,15 +55,25 @@ export default function FundingOfferSection() {
           <div className="grid gap-4 sm:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)] items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-300 mb-2">Model</p>
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#020624] text-white px-4 py-1.5 text-xs sm:text-sm font-semibold border border-[#1e40af] shadow-[0_0_22px_rgba(30,64,175,0.8)]">
-                <span className="inline-flex h-6 px-2 items-center justify-center rounded-full bg-[#1e40af]/80 text-[11px] uppercase tracking-[0.16em]">
-                  Most Popular
-                </span>
-                <span>One Step</span>
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="inline-flex items-center rounded-full bg-[#020624] text-white px-4 py-1.5 text-xs sm:text-sm font-semibold border border-[#1e40af] shadow-[0_0_22px_rgba(30,64,175,0.8)]">
+                  <span>One Step</span>
+                </div>
+                <div className="inline-flex w-max items-center rounded-full bg-[#007ac3]/10 text-[#007ac3] px-4 py-1.5 text-xs font-semibold border border-[#007ac3]/40">
+                  PRO
+                </div>
               </div>
               <div className="mt-3 text-xs sm:text-sm text-slate-200 space-y-0.5">
                 <p>
                   <span className="font-semibold text-slate-50">Phase 1:</span> 10% Profit Target
+                </p>
+                <p className="flex items-center gap-2 text-slate-100 font-medium">
+                  <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400" aria-hidden>
+                    <svg className="h-2.5 w-2.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                  <span>Weekly Payouts</span>
                 </p>
                 <p className="text-slate-400 text-[11px] sm:text-xs">
                   Pass the evaluation phase to unlock your Performance Account and earn certificates.
@@ -75,9 +85,7 @@ export default function FundingOfferSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-[#1e40af] bg-white/5 backdrop-blur-xl px-4 py-4 flex flex-col justify-between shadow-[0_22px_60px_rgba(15,23,42,0.9)]">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300 mb-2">Model Type</p>
-                <div className="inline-flex w-max items-center rounded-full bg-[#007ac3]/10 text-[#007ac3] px-4 py-1.5 text-xs font-semibold border border-[#007ac3]/40">
-                  PRO
-                </div>
+                <p className="text-sm font-semibold text-slate-200">Pro - One Phase</p>
               </div>
               <div className="rounded-2xl border border-[#1e40af] bg-white/5 backdrop-blur-xl px-4 py-4 flex flex-col justify-between shadow-[0_22px_60px_rgba(15,23,42,0.9)]">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300 mb-2">Platform</p>
@@ -96,20 +104,26 @@ export default function FundingOfferSection() {
         {/* Account Size tabs */}
         <div className="border-b border-slate-800 px-4 sm:px-8 py-4 sm:py-5">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300 mb-3">Account Size</p>
-          <div className="flex flex-wrap gap-2 sm:gap-3">
+          <div className="flex flex-wrap items-end gap-2 sm:gap-3">
             {challenges.map((challenge) => (
-              <button
-                key={challenge.id}
-                type="button"
-                onClick={() => setSelectedId(challenge.id)}
-                className={`rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all duration-200 ${
-                  selectedChallenge?.id === challenge.id
-                    ? "bg-[#007ac3] text-white shadow-[0_0_25px_rgba(59,130,246,0.9)]"
-                    : "bg-slate-900/60 text-slate-200 border border-slate-700 hover:border-[#007ac3] hover:text-[#007ac3]"
-                }`}
-              >
-                {challenge.label.replace("$", "")}
-              </button>
+              <div key={challenge.id} className="inline-flex flex-col items-center gap-1">
+                {challenge.id === "200K" && (
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#007ac3]">
+                    Most Popular
+                  </span>
+                )}
+                <button
+                  type="button"
+                  onClick={() => setSelectedId(challenge.id)}
+                  className={`rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                    selectedChallenge?.id === challenge.id
+                      ? "bg-[#007ac3] text-white shadow-[0_0_25px_rgba(59,130,246,0.9)]"
+                      : "bg-slate-900/60 text-slate-200 border border-slate-700 hover:border-[#007ac3] hover:text-[#007ac3]"
+                  }`}
+                >
+                  {challenge.label.replace("$", "")}
+                </button>
+              </div>
             ))}
           </div>
         </div>

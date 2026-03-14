@@ -54,7 +54,7 @@ export default function Footer() {
             className="inline-flex items-center gap-2 rounded-[999px] h-11 sm:h-12 px-7 sm:px-8 text-sm sm:text-base font-semibold bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-slate-950 shadow-[0_0_26px_rgba(52,211,153,0.9)] hover:shadow-[0_0_34px_rgba(52,211,153,1)] transition-transform duration-200 hover:scale-[1.04] active:scale-[0.97]"
           >
             <span className="text-lg">🎁</span>
-            <span>Start Your Free BOGO Challenge</span>
+            <span>Start Your BOGO Challenge</span>
           </Link>
         </div>
       </div>

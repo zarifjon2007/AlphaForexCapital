@@ -97,7 +97,7 @@ export default function AnniversaryOfferModal() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#007ac3]/80 shadow-lg shadow-[#007ac3]/40 mb-3">
                 <Rocket className="h-6 w-6" />
               </div>
-              <p className="text-[11px] sm:text-xs uppercase tracking-[0.22em] text-[#007ac3]/80">
+              <p className="text-[11px] sm:text-xs uppercase tracking-[0.22em] text-black">
                 ✨ SPRING TRADING EVENT ✨
               </p>
             </div>
