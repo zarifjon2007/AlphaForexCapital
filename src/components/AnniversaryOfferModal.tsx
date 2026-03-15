@@ -115,7 +115,7 @@ export default function AnniversaryOfferModal() {
                   🎁
                 </motion.span>
               </p>
-              <p className="text-[#007ac3]/90 text-xs sm:text-sm mb-5">
+              <p className="text-black text-xs sm:text-sm mb-5">
                 Celebrate the new season with us. Purchase any challenge and receive a second challenge of equal or lesser
                 value completely free.
               </p>

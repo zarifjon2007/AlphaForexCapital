@@ -110,18 +110,20 @@ export default function FundingOfferSection() {
         {/* Account Size tabs */}
         <div className="border-b border-slate-800 px-4 sm:px-8 py-4 sm:py-5">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300 mb-3">Account Size</p>
-          <div className="flex flex-wrap items-end gap-2 sm:gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
             {challenges.map((challenge) => (
-              <div key={challenge.id} className="inline-flex flex-col items-center gap-1">
-                {challenge.id === "200K" && (
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#007ac3]">
-                    Most Popular
-                  </span>
-                )}
+              <div key={challenge.id} className="flex flex-col items-center gap-1 min-w-0">
+                <div className="min-h-[18px] flex items-center justify-center">
+                  {challenge.id === "200K" ? (
+                    <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#007ac3] text-center">
+                      Most Popular
+                    </span>
+                  ) : null}
+                </div>
                 <button
                   type="button"
                   onClick={() => setSelectedId(challenge.id)}
-                  className={`rounded-full px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  className={`w-full min-w-0 rounded-full px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     selectedChallenge?.id === challenge.id
                       ? "bg-[#007ac3] text-white shadow-[0_0_25px_rgba(59,130,246,0.9)]"
                       : "bg-slate-900/60 text-slate-200 border border-slate-700 hover:border-[#007ac3] hover:text-[#007ac3]"
